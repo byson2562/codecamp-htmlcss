@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>CookCamp</title>
+  <link rel="stylesheet" href="cookcamp.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/structure/logo.png">
+      <p>誰でも作れる簡単料理レシピサイト</p>
+    </div>
+    <div class="search">
+      <form action="#">
+        <p>
+          <input type="text" name="foodserch" id="foodserch" placeholder="料理名・食材名で検索">
+        </p>
+        <p>
+          <input type="submit" value="レシピ検索">
+        </p>
+      </form>
+    </div>
+    <div class="menu">
+      <ul class="menu-ul">
+        <li><a href="#">新着レシピ</a></li>
+        <li><a href="#">料理から検索</a></li>
+        <li><a href="#">食材から検索</a></li>
+      </ul>
+    </div>
+  </header>
+  <nav>
+    <div class="nav-item">
+      <h1>料理別レシピ</h1>
+      <ul>
+        <li><a href="#">和食</a></li>
+        <li><a href="#">イタリアン</a></li>
+        <li><a href="#">フレンチ</a></li>
+      </ul>
+    </div>
+    <div class="nav-item">
+      <h1>目的別レシピ</h1>
+      <ul>
+        <li><a href="#">お弁当</a></li>
+        <li><a href="#">簡単おかず</a></li>
+        <li><a href="#">ダイエット</a></li>
+      </ul>
+    </div>
+  </nav>
+  <article>
+    <div class="article-top">
+      <h1>新着レシピ</h1>
+      <ul class="menu-ul">
+        <li><img class="new-recipe" src="images/contents/newRecipes1.jpg">hoge</li>
+        <li><img class="new-recipe" src="images/contents/newRecipes1.jpg">hoge</li>
+        <li><img class="new-recipe" src="images/contents/newRecipes1.jpg">hoge</li>
+        <li><img class="new-recipe" src="images/contents/newRecipes1.jpg">hoge</li>
+        <li><img class="new-recipe" src="images/contents/newRecipes1.jpg">hoge</li>
+      </ul>
+    </div>
+    <div class="article-main">
+      <h1>洋食</h1>
+      <div class="article-img">
+        <img src="images/contents/mainView.jpg">
+      </div>
+      <div class="article-description">
+        <p>自慢の一品です。甘いソースを絡めてお召し上がりください。</p>
+        <div class="article-continue">
+          <a href="#"><img src="images/icon/arrow.png">続きを読む</a>
+        </div>
+      </div>
+    </div>
+    <div class="article-bottom">
+      <h1>洋食</h1>
+      <div class="article-img">
+        <img src="images/contents/mainView.jpg">
+      </div>
+      <div class="article-description">
+        <h2>季節の食材〜春〜</h1>
+        <p>リストを横並びにした際にli要素の幅を簡単に均等にすることができるdisplay:table-cellを使ってみました。毎回width指定をして調整するのが面倒だなと思っていたんですが、これを使えばとても簡単に均等にできますね。可変にも対応できるのでレスポンシブといった今後使う機会が増えてきそうな感じです。</p>
+        <div class="article-continue">
+          <a href="#"><img src="images/icon/arrow.png">続きを読む</a>
+        </div>
+      </div>
+  </article>
+  <aside>
+    <div class=aside-item>
+      <a href="#"><img src="images/contents/right1.png"></a>
+    </div>
+    <div class=aside-item>
+      <a href="#"><img src="images/contents/right2.png"></a>
+    </div>
+  </aside>
+  <footer>
+    <div class=footer-nav>
+      <ul>
+        <li><a href="#">サイトマップ</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li><a href="#">ご利用ガイド</a></li>
+      </ul>
+    </div>
+    <div class=copyright>
+      <p>Copyright &copy; CookCamp All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
