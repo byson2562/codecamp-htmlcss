@@ -1,69 +1,62 @@
-body, nav, aside, article, section {
-}
 body {
   overflow: auto;
-  width: 960px;
+  background-color: #dbebf8;
+  margin: 0px;
 }
 header, footer {
   overflow-x: hidden;
   position: relative;
   width: 100%;
   background-color: #ffffff;
-  /* margin-left: -500%;
-  margin-right: -500%;
-  padding-left: 500%;
-  padding-right: 500%; */
 }
 header {
   border-bottom: solid #cccccc;
   width: 100%;
-  margin: auto;
+}
+.contents {
+  width: 960px;
+  margin: 0 auto;
 }
 footer {
-  margin: auto;
-  clear: both;
+  width: 100%;
   border-top: solid #cccccc;
-  display: flex;
-}
-body {
-  border: solid #cccccc;
 }
 nav,aside,article {
-  margin: auto;
+  margin: 10px;
 }
 nav {
   width: 20%;
   float: left;
-  border: solid #cccccc;
 }
 aside {
   width: 16%;
   float: left;
-  border: solid #cccccc;
 }
 article {
-  border: solid #cccccc;
   float: left;
-  width: 60%;
+  width: 57%;
 }
 form {
-  float: right;
+  display: flex;
 }
 h1 {
-  color: #505050;/*文字色*/
+  color: #ffffff;/*文字色*/
   line-height: 1.3;/*行高*/
-  background: #dbebf8;/*背景色*/
+  background: #1E90FF;/*背景色*/
   vertical-align: middle;
   border-radius: 25px 25px 25px 25px;/*角を丸く*/
-  font-size: 16px;
-  margin: 10px 0px;
-}
-h1:before {
-  content: url("images/icon/favicon.ico");
+  font-size: 18px;
+  margin: 5px 0px;
+  background-image: url("images/icon/dish.png");
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  height: 24px;
+  background-position: 0 0px
 }
 ul {
   list-style-position: inside;
-	list-style-image: url(images/icon/arrow.png);
+  list-style-image: url(images/icon/arrow.png);
+  padding-inline-start: 0px;
 }
 .favicon {
   height: 16px;
@@ -73,20 +66,18 @@ ul {
 /* ヘッダー */
 .logo {
   float: left;
-  /* border: solid #cccccc; */
 }
 .search {
   float: right;
-  /* border: solid #cccccc; */
-  width: 50%;
+  width: 250px;
+  margin: 30px 0px 0px;
+}
 }
 .menu {
   clear: both;
-  width: 100%;
-  /* border: solid #cccccc; */
+  margin: 10px 0;
 }
-.menu-ul {
-  /* border: solid #cccccc; */
+.menu ul {
   margin: auto;
   display: table;
   table-layout: fixed;
@@ -100,32 +91,47 @@ ul {
   vertical-align: middle;
   text-align: center;
 }
-
+.menu-ul li:last-child {
+  border: none;
+}
 /* ナビゲーション */
 .nav-item {
-  margin: 10px 0px 10px 0px;
-  border: solid #cccccc;
+  margin: 0px 0px 10px 0px;
+  background-color: #ffffff;
+  height: 130px;
+  overflow : hidden;
+}
+.nav-item-list {
+  margin: 0px 10px;
+}
+.nav-item-list ul li {
+  border-bottom: dotted #cccccc;
+}
+.nav-item-list ul li:last-child {
+  border: none;
 }
 
 /* コンテンツ */
 .article-top,.article-main,.article-bottom {
-  margin: 10px 0px 10px 0px;
-  border: solid #cccccc;
   font-size: 12px;
+  background-color: #ffffff;
+}
+.article-main,.article-bottom {
+  margin: 10px 0px 10px 0px;
 }
 .article-img {
   width: 60%;
-  border: solid #cccccc;
   float: left;
+  margin-left: 5px;
+  margin-block-start: 1em;
 }
 .article-img img {
   width: 100%;
-  margin-right: 20px;
 }
 .article-description {
   width: 35%;
-  border: solid #cccccc;
-  float: left;
+  float: right;
+  margin: 0px 10px 0px 0px;
 }
 .article-description p {
   text-indent: 1em;
@@ -136,7 +142,6 @@ ul {
 
 /* コンテンツ上段 */
 .article-top {
-  border: solid #cccccc;
   display: table;
   table-layout: fixed;
   width: 100%;
@@ -148,33 +153,37 @@ ul {
 
 /* コンテンツ中段 */
 .article-main {
-  overflow : hidden
+  overflow : hidden;
+  /* width: 400px; */
+}
+.article-description {
+  margin: 0px 10px;
 }
 
 /* コンテンツ下段 */
 .article-bottom {
+  overflow : hidden;
   clear: both;
+  height: 300px
 }
 .article-bottom h2 {
   font-size: 16px;
-  color: #dbebf8;
+  color: #4B0082;
 }
 
 /* 広告 */
 .aside-item {
-  margin: 10px 0px 10px 0px;
-  border: solid #cccccc;
+  margin: 0px 0px 10px 0px;
 }
 
 /* フッター */
 .footer-nav {
+  margin: 10px 0px 0px 0px;
+  display: block;
   font-size: 12px;
-  border: solid #cccccc;
-  margin: auto;
   text-align: center;
 }
 .footer-nav ul {
-  /* border: solid #cccccc; */
   width: 60%;
   margin: auto;
   display: table;
@@ -189,10 +198,11 @@ ul {
   vertical-align: middle;
   text-align: center;
 }
+.footer-nav ul li:last-child {
+  border: none
+}
 .copyright {
+  margin: 20px 0px;
   font-size: 10px;
-  border: solid #cccccc;
-  margin: auto;
   text-align: center;
-  clear: both;
 }
