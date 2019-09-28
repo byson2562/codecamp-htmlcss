@@ -3,6 +3,11 @@ body {
   background-color: #dbebf8;
   margin: 0px;
 }
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 header, footer {
   overflow-x: hidden;
   position: relative;
@@ -30,12 +35,12 @@ nav {
   float: left;
 }
 aside {
-  width: 15%;
+  width: 150px;
   float: left;
 }
 article {
   float: left;
-  width: 590px;
+  width: 600px;
 }
 form {
   display: flex;
@@ -56,14 +61,14 @@ h2 {
   background-position: 0 0px
 }
 ul {
-  list-style-position: inside;
   list-style-image: url(images/icon/arrow.png);
-  padding-inline-start: 0px;
+  padding-inline-start: 10px;
   margin: 10px 0px;
 }
 a {
   text-decoration: none;
   color: #664433;
+  display: block;
 }
 .favicon {
   height: 16px;
@@ -100,11 +105,20 @@ a {
   width: 180px;
   text-align: center;
   border-right: 1px #cccccc solid;
+  box-sizing: border-box;
 }
 .header-menu li:last-child {
   border: none;
-  width: 181px;
 }
+
+/* ナビゲーション */
+.main-image {
+  margin-top: 10px;
+}
+.main-image-photo {
+  width: 950px;
+}
+
 /* ナビゲーション */
 .nav-item {
   margin: 0px 0px 10px 0px;
@@ -133,6 +147,7 @@ a {
 }
 .article-main,.article-bottom {
   margin: 10px 0px;
+  height: 250px;
 }
 .article-img {
   width: 60%;
@@ -141,7 +156,8 @@ a {
   margin-block-start: 1em;
 }
 .article-img img {
-  width: 100%;
+  width: 350px;
+  margin-left: 10px;
 }
 .article-description {
   width: 35%;
@@ -155,10 +171,13 @@ a {
   text-align: right;
   font-size: 16px;
   right: 0;
+  bottom: 0;
+  position: absolute;
 	bottom: 0;
 }
 .article-continue a {
   color: #fc8833;
+  display: contents;
 }
 
 /* コンテンツ上段 */
@@ -183,10 +202,10 @@ a {
   text-align: center;
   width: 100%;
   padding-left: 0;
+  list-style: none;
 }
 .menu-ul li {
-  /* display: table-cell; */
-  display: inline;
+  display: table-cell;
   vertical-align: middle;
   text-align: center;
   width: 105px;
@@ -210,6 +229,9 @@ a {
 }
 .article-description {
   margin: 0px 10px;
+  height: 220px;
+  width: 210px;
+  position: relative;
 }
 
 /* コンテンツ下段 */
@@ -222,6 +244,7 @@ a {
 .article-bottom h3 {
   font-size: 16px;
   color: #664433;
+  margin: 10px;
 }
 
 /* 広告 */
