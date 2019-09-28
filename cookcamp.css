@@ -12,9 +12,10 @@ header, footer {
 header {
   border-bottom: solid #cccccc;
   width: 100%;
+  margin: 0 auto;
 }
 .contents {
-  width: 960px;
+  width: 950px;
   margin: 0 auto;
 }
 footer {
@@ -22,29 +23,30 @@ footer {
   border-top: solid #cccccc;
 }
 nav,aside,article {
-  margin: 10px;
+  margin: 5px;
 }
 nav {
-  width: 20%;
+  width: 170px;
   float: left;
 }
 aside {
-  width: 16%;
+  width: 15%;
   float: left;
 }
 article {
   float: left;
-  width: 57%;
+  width: 590px;
 }
 form {
   display: flex;
+  float: right;
 }
-h1 {
+h2 {
   color: #ffffff;/*文字色*/
   line-height: 1.3;/*行高*/
   background: #1E90FF;/*背景色*/
   vertical-align: middle;
-  border-radius: 25px 25px 25px 25px;/*角を丸く*/
+  border-radius: 15px 15px 15px 15px;/*角を丸く*/
   font-size: 18px;
   margin: 5px 0px;
   background-image: url("images/icon/dish.png");
@@ -57,6 +59,11 @@ ul {
   list-style-position: inside;
   list-style-image: url(images/icon/arrow.png);
   padding-inline-start: 0px;
+  margin: 10px 0px;
+}
+a {
+  text-decoration: none;
+  color: #664433;
 }
 .favicon {
   height: 16px;
@@ -66,46 +73,54 @@ ul {
 /* ヘッダー */
 .logo {
   float: left;
+  color: #664433;
+  margin: 10px 0;
+}
+.logo p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .search {
   float: right;
   width: 250px;
-  margin: 30px 0px 0px;
+  margin: 10px 0px;
 }
-}
-.menu {
+.header-menu {
   clear: both;
+  margin: 10px;
+}
+.header-menu ul {
+  list-style: none;
+  overflow: hidden;
+}
+.header-menu li {
   margin: 10px 0;
-}
-.menu ul {
-  margin: auto;
-  display: table;
-  table-layout: fixed;
+  font-weight: bold;
+  float: left;
+  width: 180px;
   text-align: center;
-  width: 100%;
-  padding-left: 0;
+  border-right: 1px #cccccc solid;
 }
-.menu-ul li {
-  border-right: 1px solid #cccccc;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-.menu-ul li:last-child {
+.header-menu li:last-child {
   border: none;
+  width: 181px;
 }
 /* ナビゲーション */
 .nav-item {
   margin: 0px 0px 10px 0px;
   background-color: #ffffff;
-  height: 130px;
+  height: 120px;
   overflow : hidden;
 }
 .nav-item-list {
   margin: 0px 10px;
 }
+.nav-item-list ul {
+  margin: 0px 10px;
+}
 .nav-item-list ul li {
   border-bottom: dotted #cccccc;
+  font-weight: bold;
 }
 .nav-item-list ul li:last-child {
   border: none;
@@ -117,7 +132,7 @@ ul {
   background-color: #ffffff;
 }
 .article-main,.article-bottom {
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px;
 }
 .article-img {
   width: 60%;
@@ -138,6 +153,12 @@ ul {
 }
 .article-continue {
   text-align: right;
+  font-size: 16px;
+  right: 0;
+	bottom: 0;
+}
+.article-continue a {
+  color: #fc8833;
 }
 
 /* コンテンツ上段 */
@@ -146,15 +167,46 @@ ul {
   table-layout: fixed;
   width: 100%;
   padding-left: 0;
+  padding-bottom: 10px;
 }
 .article-top .new-recipe {
   width: 100px;
+}
+.menu {
+  clear: both;
+  margin: 10px 0;
+}
+.menu ul {
+  margin: auto;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+  padding-left: 0;
+}
+.menu-ul li {
+  /* display: table-cell; */
+  display: inline;
+  vertical-align: middle;
+  text-align: center;
+  width: 105px;
+  float: left;
+  margin-left: 10px;
+  padding-top: 0px;
+}
+.menu-ul li:last-child {
+  border: none;
+  width: 106px;
+  margin-right: 10px;
+}
+.menu-ul li a {
+  text-decoration: none;
 }
 
 /* コンテンツ中段 */
 .article-main {
   overflow : hidden;
-  /* width: 400px; */
+  padding-bottom: 10px;
 }
 .article-description {
   margin: 0px 10px;
@@ -164,11 +216,12 @@ ul {
 .article-bottom {
   overflow : hidden;
   clear: both;
-  height: 300px
+  height: 300px;
+  padding-bottom: 10px;
 }
-.article-bottom h2 {
+.article-bottom h3 {
   font-size: 16px;
-  color: #4B0082;
+  color: #664433;
 }
 
 /* 広告 */
@@ -203,6 +256,6 @@ ul {
 }
 .copyright {
   margin: 20px 0px;
-  font-size: 10px;
+  font-size: small;
   text-align: center;
 }
