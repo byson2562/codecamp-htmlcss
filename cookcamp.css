@@ -56,9 +56,9 @@ h2 {
   margin: 5px 0px;
   background-image: url("images/icon/dish.png");
   background-repeat: no-repeat;
-  padding-left: 20px;
+  padding-left: 30px;
   height: 24px;
-  background-position: 0 0px
+  background-position: 10px 0px;
 }
 ul {
   list-style-image: url(images/icon/arrow.png);
